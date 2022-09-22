@@ -1,11 +1,16 @@
-
+var Rollbar = require("rollbar");
+var rollbar = new Rollbar({
+  accessToken: '54fe487c727144589f10dcffd524cc68',
+  captureUncaught: true,
+  captureUnhandledRejections: true
+});
 
 
 function myFunction() {
   var element = document.getElementById("snom");
   element.classList.toggle("grayscale");
-  console.log('click')
-  rollbar.info("User clicked")
+  console.log('click');
+  rollbar.log("User clicked");
 }
 
 let snomclick = document.querySelector("#snom");
