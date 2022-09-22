@@ -27,9 +27,9 @@ try {
   };
 
   try {
-    nonExistentFunction2();
+   myFunction();
   } catch (error) {
-    rollbar.critical('whats up!!');
+    rollbar.log('user clicked!');
     // expected output: ReferenceError: nonExistentFunction is not defined
     // Note - error messages will vary depending on browser
   };
