@@ -1,4 +1,4 @@
-const {rollbar} = require
+
 
 function myFunction() {
   var element = document.getElementById("snom");
