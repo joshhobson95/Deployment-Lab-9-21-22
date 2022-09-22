@@ -5,6 +5,7 @@ function myFunction() {
   var element = document.getElementById("snom");
   element.classList.toggle("grayscale");
   console.log('click')
+  rollbar.info("User clicked")
 }
 
 let snomclick = document.querySelector("#snom");
